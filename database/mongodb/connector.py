@@ -16,13 +16,3 @@ class Database:
     
     def test(self):
         return self.Cluster
-        
-
-if __name__=='__main__':
-    db = Database()
-
-    data = {'email': 'murilryanbarbosa@gmail.com','password': '123'}
-
-    print(db.test())
-
-    print(db.user.login(data))
