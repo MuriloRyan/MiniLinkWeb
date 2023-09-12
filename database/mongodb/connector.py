@@ -13,3 +13,16 @@ class Database:
 
         self.user = UserCollection(self.database)
         self.link = LinkCollection(self.database)
+    
+    def test(self):
+        return self.Cluster
+        
+
+if __name__=='__main__':
+    db = Database()
+
+    data = {'email': 'murilryanbarbosa@gmail.com','password': '123'}
+
+    print(db.test())
+
+    print(db.user.login(data))

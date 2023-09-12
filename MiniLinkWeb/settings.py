@@ -76,15 +76,7 @@ WSGI_APPLICATION = 'MiniLinkWeb.wsgi.application'
 
 # settings.py
 
-import pymongo
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.dummy',  # Use o dummy engine
-        'NAME': 'mydatabase',  # Nome do banco de dados
-        'CLIENT': pymongo.MongoClient("mongodb+srv://development:123698745Mr@cluster0.saee1v7.mongodb.net/?retryWrites=true&w=majority"),
-    }
-}
+DATABASES = {}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
